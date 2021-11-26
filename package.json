@@ -1,0 +1,33 @@
+{
+  "name": "venus-nft",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/trmvenus/venus-nft.git",
+  "author": "TrmVenus",
+  "license": "MIT",
+  "scripts": {
+    "compile": "truffle compile",
+    "build:local": "truffle migrate --network local --reset",
+    "test:local": "truffle test --network local",
+    "test:nft": "truffle test ./test/1_venus_nft.test.js --network local --compile-none",
+    "test:factory": "truffle test ./test/2_venus_nft_factory.test.js --network local --compile-none",
+    "test:auction": "truffle test ./test/3_venus_nft_auction.test.js --network local --compile-none",
+    "test:marketplace": "truffle test ./test/4_venus_nft_marketplace.test.js --network local --compile-none"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "chai-bn": "^0.3.0",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.4.7",
+    "global": "^4.4.0",
+    "truffle-assertions": "^0.9.2",
+    "truffle-flattener": "^1.5.0"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.15"
+  }
+}
