@@ -1,4 +1,4 @@
-# venus-nft
+# Venus NFT
 Solidity contracts for VenusNFT Marketplace.
 
 1. Clone repo
